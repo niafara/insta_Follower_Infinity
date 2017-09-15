@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="?attr/colorPrimary"
+        android:textColor="#ffffff"
+        android:padding="5dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_action_action_search"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_search"
+            />
+
+    </LinearLayout>
+
+    <!--change:-->
+        <!--android:layout_weight="0.1"-->
+        <!--android:visibility="invisible"-->
+    <!--to show tabs-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_weight="0.1"
+        android:visibility="invisible"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/search_left_button"
+            android:textColor="?attr/colorAccent"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/search_right_button"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:background="#ffffff"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        >
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_search_popular_medias"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                </android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/follow_like_bottom_ll"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:id="@+id/fl_pb"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+<ScrollView 
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    android:orientation="vertical" >
+
+    
+
+       
+   
+
+  <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_gravity="right"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="لطفا در صورتی که این برنامه رضایت شمارا بدست آورده است و شما تمایل دارید که مارا در ارائه بروزرسانی های منظم و مرتب این برنامه یاری دهید، با پرداخت هزینه ای ناچیز مارا در این مسیر حمایت کنید.\nضمنا به منظور ارج نهادن به این لطف شما، تمامی تبلیغات برنامه حذف خواهند شد.\n\nدر صورت حمایت از ما، تبلیغات برنامه برای همیشه حذف میشوند و در صورت پاک شدن برنامه و نصب مجدد آن، با کلیک کردن بروی گزینه پرداخت زیر برنامه به صورت خودکار خرید شمارا بازیابی میکند.\nدر صورتی که میخواهید وارد صفحه پرداخت شوید بروی دکمه پرداخت کلیک کنید." />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:onClick="kharid"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="پرداخت" />
+
+</LinearLayout>
+ </ScrollView>
+ </LinearLayout>

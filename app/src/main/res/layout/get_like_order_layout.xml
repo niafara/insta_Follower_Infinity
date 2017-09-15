@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/follow_like_bottom_ll"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:id="@+id/fl_pb"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        >
+
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/iv"
+            android:src="@drawable/coin"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_coin"
+            android:id="@+id/textView8"
+            android:textColor="@color/tabs_color"
+            android:layout_alignTop="@+id/tv_coin_count"
+            android:layout_toLeftOf="@+id/iv"
+            android:layout_toStartOf="@+id/iv"
+            android:layout_alignBottom="@+id/iv"
+            android:gravity="center"
+            android:layout_marginRight="8dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+
+            android:id="@+id/tv_coin_count"
+            android:textColor="@color/narenji"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView8"
+            android:layout_toStartOf="@+id/textView8"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignBottom="@+id/iv"
+            android:gravity="center"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/textView8"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/tabs_color"
+
+            android:layout_marginLeft="5dp"
+            android:text="@string/get_like_choose_des"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:id="@+id/tv_get_like_choose_des"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout_get_like_order_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_get_like_order_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

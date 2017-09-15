@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string name="app_name">اینستاگرام فالـُـور بینهایت</string>
+    <string name="margin_left">5dp</string>
+    <string name="margin_righ">5dp</string>
+
+    <string name="follower">فالـُـور </string>
+    <string name="requested_follower">فالـُـور \nدرخواستی</string>
+    <string name="statistics">آمار</string>
+    <string name="title_activity_insta_login">InstaLoginActivity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="connection_error">خطا در برقراری اتصال</string>
+    <string name="map_error_invalid_input">لطفا یک مقدار معتبر وارد کنید</string>
+    <string name="map_info_new_radious">شعاع جدید:</string>
+    <string name="map_info_new_radious_des">شعلع محدوده جستجوی مورد نظر را(به متر) وارد کنید\n</string>
+    <string name="map_info_min_dis">حداقل : 1 متر\n</string>
+    <string name="map_info_max_dis">حداکثر : 5000 متر</string>
+    <string name="map_info_okay">اعمال</string>
+    <string name="map_info_cancel">لغو</string>
+    <string name="location_enter_place">مکان رو وارد کن</string>
+    <string name="comment_send">ارسال</string>
+    <string name="no_connection">اتصال با اینترنت برقرار نیست</string>
+    <string name="getLocation_des">برای نهایت استفاده از امکانات برنامه ، موقعیت مکانی رو ذخیره کنید</string>
+    <string name="getLocation_problem">مکان پیدا نشد ، \\n برای ذخیره مکان می توانید از تنظیمات هم استفاده کنی</string>
+    <string name="get_follower_show_des">نمایش متن کوتاه</string>
+    <string name="get_follower_enable_sex_text">انتخاب جنسیت فالـُـور  ها</string>
+    <string name="get_like_enable_sex_text">انتخاب جنسیت لایکرها</string>
+    <string name="get_short_des_input_content">
+متن دلخواه خود را وارد کنید
+    </string>
+    <string name="OPEN_CAMERA_DESCRIPTION">
+        برای آپلود عکس یا ویدیو باید از طریق اینستاگرام اقدام کنید\n برای رفتن به ایسنتاگرام بر روی عکس زیر کلیک کنید
+    </string>
+    <string name="OPEN_CAMERA_BUTTON">رفتن به اینستاگرام</string>
+    <string name="INSTA_APP_NOT_FOUND">برنامه ی اینستاگرام پیدا نشد</string>
+
+    <string-array name="more_btn_optoins">
+        <item>افزایش لایک</item>
+        <item>کپی متن</item>
+        <item>ریپست</item>
+        <item>دانلود عکس پروفایل</item>
+    </string-array>
+
+    <string-array name="user_profile_options">
+        <item>دانلود عکس پروفایل</item>
+        <!--<item>اشتراک گذاری پروفایل</item>-->
+    </string-array>
+
+    <string-array name="ok_list">
+        <item>باشه</item>
+    </string-array>
+
+    <string name="Download_START">در حال دانلود</string>
+    <string name="Loading">لطفا کمی صبر کنید</string>
+
+    <string name="connecting_instagram">در حال اتصال به اینستاگرام ...</string>
+
+    <string-array name="faq_titles">
+        <item>پول از حسابم کم شد ولی خرید ثبت نشد و سکه ای اضافه نشده . چکار کنم؟</item>
+        <item>لیست برترین ها چیست و چگونه میتوان در لیست قرار گرفت؟</item>
+        <item>چطور میتوان جایزه برترین فالـُـور  ها و لایک ککنده ها را دریافت کرد؟</item>
+        <item>چگونه می توانم سکه ها را به حساب دیگری منتقل کنم؟</item>
+        <item>چرا موقع فالو کردن با اینکه اتصال اینترنت خوبی دارم با خطا در برقراری اتصال مواجه میشوم ؟</item>
+        <item>چطور میتونم سکه رایگان جایزه بگیرم ؟</item>
+    </string-array>
+
+    <string-array name="faq_contents">
+        <item>یکبار دیگر روی محصول خریداری شده کلیک کنید
+\n
+اگر باز هم خرید ثبت نشد ، نام کاربری ، نام محصول خریداری شده و توکن محصول رو به ایمیل برنامه داخل درباره ما بفرستید</item>
+
+        <item>در قسمت لیست برترین فالو کننده ها و برترین لایک کنندگان کسانی که بیشترین لایک و یا فالو را در 24 ساعت گذشته داشته اند نمایش داده می شوند</item>
+
+        <item>
+            هر شب ، ساعت 12 به کسانی که در لیست برترین ها حضور دارند جایزه داده می شود.
+        </item>
+
+        <item>از منوی سمت راست به قسمت انتقال سکه بروید،  انتقال را انجام دهید.
+\n
+قبل از انتقال حتما قوانین را مطالعه کنید</item>
+
+        <item>
+            این خطا از سمت اینستاگرام است و احتمالا توسط اینستاگرام بلاک شدید.\n
+            ساعتی بعد امتحان کنید
+
+        </item>
+
+        <item>
+
+            هر هشت ساعت یکبار جایزه آماده میشود و میتوانید با وارد شدن به برنامه و مشاهده یک ویدیو کوتاه سکه رایگان دریافت کنید
+
+        </item>
+
+    </string-array>
+
+</resources>

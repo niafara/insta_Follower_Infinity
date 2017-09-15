@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" 
+    android:layout_margin="15dp"
+    android:id="@+id/aboutL" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="3.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout
+                android:orientation="vertical" android:id="@+id/about_us" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView
+                android:layout_gravity="center" android:id="@+id/imageView1" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="20.0dip" android:paddingBottom="20.0dip" android:layout_width="365.0dip" android:layout_height="wrap_content" android:src="@mipmap/ic_launcher" />
+            <TextView
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help1" />
+            <TextView                 android:textColor="#000000"
+                android:textSize="20dp" android:gravity="center" android:layout_gravity="center_horizontal"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help2" />
+            <TextView                 android:textColor="#000000"
+                android:textSize="20dp" android:gravity="center" android:layout_gravity="center_horizontal"   android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help3" />
+            <TextView                 android:textColor="#000000"
+                android:textSize="20dp" android:gravity="center" android:layout_gravity="center_horizontal"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help4" />
+         
+            <ImageView android:layout_gravity="center"  android:paddingTop="15.0dip" android:layout_width="365.0dip" android:layout_height="wrap_content" android:src="@drawable/dialog_warning" />
+            <TextView                 android:textColor="#000000"
+                android:textSize="20dp" android:layout_gravity="center_horizontal"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help5" />
+            <TextView                 android:textColor="#000000"
+                android:textSize="20dp" android:layout_gravity="center_horizontal"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help6" />
+            <TextView                 android:textColor="#000000"
+                android:textSize="20dp" android:layout_gravity="center_horizontal"  android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/help7" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+        <color name="primary_dark_blue_default">#1565C0</color>
+        <color name="primary_dark_Red">#D32F2F</color>
+        <color name="primary_dark_Pink">#AD1457</color>
+        <color name="primary_dark_Purple">#9C27B0</color>
+        <color name="primary_dark_DeepPurple">#673AB7</color>
+
+        <color name="primary_dark_green">#2E7D32</color>
+        <color name="primary_dark_Indigo">#283593</color>
+        <color name="primary_dark_Blue">#1565C0</color>
+        <color name="primary_dark_Cyan">#00838F</color>
+        <color name="primary_dark_Teal">#00695C</color>
+
+        <color name="primary_dark_Light_Green">#558B2F</color>
+        <color name="primary_dark_Lime">#9E9D24</color>
+        <color name="primary_dark_Yellow">#F9A825</color>
+        <color name="primary_dark_Amber">#FF8F00</color>
+        <color name="primary_dark_Orange">#EF6C00</color>
+
+        <color name="primary_dark_Light_Brown">#4E342E</color>
+        <color name="primary_dark_Blue_Grey">#37474F</color>
+
+    </resources>

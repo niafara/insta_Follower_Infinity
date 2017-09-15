@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleEnabled="false"
+            app:title=""
+            app:collapsedTitleGravity="right"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:collapsedTitleTextAppearance="@style/myExpandedTitleStyle.Title"
+            app:expandedTitleTextAppearance="@style/myExpandedTitleStyle.Title"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:background="@color/tabs_color"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:id="@+id/iv_back"
+                        android:src="@drawable/left_arrow"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/iv_search"
+                        android:padding="10dp"
+                        android:src="@drawable/magnifying_"
+                        android:layout_toRightOf="@id/iv_back"
+                        android:layout_margin="10dp"
+                        />
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_search"
+                        android:id="@+id/tv_search"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/narenji"
+                        android:textSize="12sp"
+                        android:hint="جستجوی...؟"
+                        android:textColorHint="#ffffff"
+                        android:gravity="center"
+
+                        android:imeActionId="@+id/search"
+                        android:singleLine="true"
+                        android:maxLines="1"
+                        android:imeOptions="actionSearch"
+                        android:layout_marginRight="10dp"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:padding="5dp"
+                android:visibility="gone"
+                >
+
+            </android.support.v7.widget.Toolbar>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:elevation="@dimen/default_elevation"
+        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:visibility="gone"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:text="@string/help_order_follower_for_others"
+        android:id="@+id/tv_help_order_follower"
+        android:visibility="gone"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/get_like_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="#ffffff"
+        />
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/get_like_tl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="?attr/colorPrimary"
+
+        />
+
+</LinearLayout>

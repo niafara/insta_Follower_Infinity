@@ -1,0 +1,110 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_analysis"
+        android:icon="@drawable/browser"
+        android:title="بررسی حساب" />
+
+
+    <group android:id="@+id/menu_group_1"
+
+
+        >
+
+        <item
+            android:title="@string/award_title"
+
+            android:icon="@drawable/present"
+            android:id="@+id/menu_item_get_award"
+            android:visible="false"
+
+            />
+
+        <item
+            android:id="@+id/menu_get_order_like"
+            android:icon="@drawable/online0"
+            android:title="وضعیت آنلاین سفارش"/>
+
+        <item
+            android:id="@+id/menu_get_order_follower"
+            android:icon="@drawable/onlinee"
+            android:title="فعالیت های من"/>
+
+        <item
+            android:title="انتقال سکه"
+            android:icon="@drawable/transfer"
+            android:id="@+id/menu_transfer"
+            android:visible="false"
+            />
+    </group>
+
+    <group
+        android:id="@+id/gg">
+
+        <item android:id="@+id/menu_liked"
+            android:title="لایک شده ها"
+            android:icon="@drawable/liked"
+            />
+        <item android:id="@+id/menu_recover"
+            android:title="بازیابی خرید ناموفق"
+            android:visible="false"
+            android:icon="@drawable/menu_recover"
+            />
+
+    </group>
+
+    <group android:id="@+id/menu_group_2">
+        <item
+            android:id="@+id/menu_telegram"
+            android:title="ممبر بگیر تلگرام"
+            android:icon="@drawable/telegram"
+
+            />
+        <item
+            android:id="@+id/menu_others"
+            android:title="دیگر برنامه های ما"
+            android:icon="@drawable/menu_others"
+
+            />
+        <item
+            android:id="@+id/menu_faq"
+            android:title="@string/faq"
+            android:icon="@drawable/faq"
+
+            />
+
+        <item
+            android:id="@+id/menu_roles"
+            android:title="@string/app_rules"
+            android:icon="@drawable/rules"
+            android:visible="false"
+
+
+            />
+        <item android:id="@+id/backup"
+            android:title="پشتیبانی"
+            android:icon="@drawable/backup"
+            />
+
+        <item android:id="@+id/share_app"
+            android:title="معرفی به دوستان"
+            android:icon="@drawable/share_app"
+            android:visible="false"
+            />
+
+        <item
+            android:id="@+id/menu_about"
+            android:title="درباره ی ما"
+            android:icon="@drawable/about_us"
+
+            />
+    </group>
+
+    <item android:title="خروج از حساب"
+        android:id="@+id/menu_logout"
+        android:icon="@drawable/exit"
+
+        />
+
+
+</menu>

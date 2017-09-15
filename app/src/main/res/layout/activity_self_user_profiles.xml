@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cube_ptr="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+
+    <ui.view.RevealBackgroundView
+        android:id="@+id/vRevealBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/swipeContainer"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvUserProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:visibility="gone"/>
+
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapsing_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentScrim="?attr/colorPrimary">
+
+
+                <LinearLayout
+                    android:id="@+id/vUserProfileRoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipChildren="false"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:paddingBottom="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:paddingTop="16dp"
+                    android:background="#ffffff"
+                    app:tabIndicatorColor="#5be5ad"
+                    app:tabIndicatorHeight="4dp">
+
+                    <!--android:background="?attr/colorPrimary"-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false">
+
+                        <ImageView
+                            android:id="@+id/ivUserProfilePhoto"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="@dimen/user_profile_avatar_size"
+                            android:layout_height="@dimen/user_profile_avatar_size"
+                            android:layout_marginRight="16dp" />
+
+                        <LinearLayout
+                            android:id="@+id/vUserDetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#bbbbbb"
+                                android:id="@+id/tv_user_profile_user_name"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000000"
+                                android:id="@+id/tv_user_profile_full_name"
+                                android:textSize="12sp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_user_profile_bio"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_user_profile_web"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <Button
+                                android:id="@+id/btnFollow"
+                                android:layout_width="match_parent"
+                                android:layout_height="24dp"
+                                android:layout_marginRight="24dp"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/btn_gray"
+                                android:textColor="#000000"
+                                android:textSize="12sp" />
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:visibility="gone"
+                                android:id="@+id/progress_button"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/vUserStats"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="16dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_user_profile_post"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="posts"
+                                android:textColor="#000000"
+                                android:id="@+id/btn_user_profile_post"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_user_profile_followe_by"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="followers"
+                                android:textColor="#000000"
+                                android:id="@+id/btn_user_profile_followers"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/tv_user_profile_following"
+                                android:textColor="#000000"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="following"
+                                android:textColor="#000000"
+                                android:id="@+id/btn_user_profile_following"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <!--</in.srain.cube.views.ptr.PtrFrameLayout>-->
+
+                <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--android:background="?attr/colorPrimary"-->
+                <!--app:elevation="@dimen/default_elevation"-->
+                <!--app:layout_collapseMode="pin"-->
+                <!--app:layout_scrollFlags="scroll|enterAlways"-->
+                <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+                <!--&lt;!&ndash;perfect insta&ndash;&gt;-->
+                <!--&lt;!&ndash;perfect insta&ndash;&gt;-->
+                <!--&lt;!&ndash;perfect insta&ndash;&gt;-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/ivLogo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="center"-->
+                <!--android:src="@drawable/img_toolbar_logo" />-->
+                <!--</android.support.v7.widget.Toolbar>-->
+
+
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/UP_root_frame"
+
+                android:visibility="gone"  >
+
+
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tlUserProfileTabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="#ffffff"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#5be5ad"
+                    app:tabIndicatorHeight="4dp"
+                    app:tabMode="fixed"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#c5c5c5"
+                    android:layout_margin="1dp"
+                    android:id="@+id/view_tab_divider"
+                    />
+
+                <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/viewpager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0px"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@android:color/white" />-->
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="#ffffff"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:id="@+id/follow_like_bottom_ll"-->
+                <!--android:gravity="bottom">-->
+
+                <!--<ProgressBar-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:background="#ffffff"-->
+                <!--android:id="@+id/fl_pb"/>-->
+
+                <!--</LinearLayout>-->
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                >
+
+
+                <!--<android.support.v4.view.ViewPager-->
+                <!--android:id="@+id/viewpager"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="0px"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@android:color/white" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/follow_like_bottom_ll"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/fl_pb"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_action_lock_outline"
+                        android:visibility="gone"
+                        android:id="@+id/lock_img"
+                        />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/btnCreate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_gravity="bottom|right"-->
+        <!--android:layout_marginBottom="@dimen/btn_fab_margins"-->
+        <!--android:layout_marginRight="@dimen/btn_fab_margins"-->
+        <!--android:src="@drawable/ic_instagram_white"-->
+        <!--app:borderWidth="0dp"-->
+        <!--app:elevation="6dp"-->
+        <!--app:pressedTranslationZ="12dp" />-->
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tutorial_des">
+        <item>دانلود</item>
+        <item>ریپست</item>
+        <item>فالـُـور </item>
+        <item>لوکیشن</item>
+    </string-array>
+
+
+</resources>

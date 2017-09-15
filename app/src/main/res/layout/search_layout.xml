@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:id="@+id/search_top_ll"
+        android:background="@color/tabs_color"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_action_search"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/iv_search"
+            />
+
+        <AutoCompleteTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/acmp_tv_search"
+            android:hint="جستجوی...؟"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/narenji"
+            android:imeActionId="@+id/search"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:id="@+id/ll_tabs_container"
+        android:background="@color/light_gray_mas"
+        >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/search_left_button"
+            android:textColor="@color/tabs_color"
+            android:gravity="center"
+            android:layout_margin="1dp"
+            android:background="@color/narenji"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/search_right_button"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:background="@color/tabs_color"
+            android:layout_margin="1dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/follow_like_bottom_ll"
+            android:gravity="center"
+            >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="#ffffff"
+                android:id="@+id/fl_pb"/>
+
+        </LinearLayout>
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_search_popular_medias"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+                </android.support.v7.widget.RecyclerView>
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

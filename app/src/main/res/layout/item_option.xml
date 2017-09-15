@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:padding="5dp"
+        android:background="@drawable/custom_bg"
+        >
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:id="@+id/iv_arrow"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_value"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:minWidth="100dp"
+
+            android:gravity="center"
+
+            android:padding="10dp"
+            android:textColor="@color/tabs_color"
+            android:background="@drawable/custom_bg_two"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_arrow"
+            android:layout_toEndOf="@+id/iv_arrow"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name"
+            android:textStyle="bold"
+            android:textColor="@color/tabs_color"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

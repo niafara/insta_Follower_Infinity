@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="item_icon_default_color">#8b8b8b</color>
+
+    <color name="colorAccentDark">#e91e63</color>
+
+
+
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#277bec</color>
+
+    <color name="url_bg">#df5352ff</color>
+    <color name="view_background">#e8ecfa</color>
+    <color name="btn_bg">#277bec</color>
+    <color name="txt_font">#ff5d4772</color>
+    <!--<color name="action_bar">#7ea32d</color>-->
+    <color name="action_bar">#ffffff</color>
+
+    <color name="style_color_primary">#2d5d82</color>
+    <color name="style_color_primary_dark">#21425d</color>
+    <color name="style_color_accent">#01bcd5</color>
+    <color name="ccc">#137ad4</color>
+
+    <color name="fab_color_pressed">#007787</color>
+    <color name="fab_color_shadow">#44000000</color>
+
+    <color name="btn_default_light_normal">#00000000</color>
+    <color name="btn_default_light_pressed">#40ffffff</color>
+    <color name="btn_send_normal">#02c754</color>
+    <color name="btn_send_pressed">#006633</color>
+    <color name="btn_default_shadow">#99000000</color>
+    <color name="btn_context_menu_normal">#ffffff</color>
+    <color name="btn_context_menu_pressed">#40000000</color>
+    <color name="btn_context_menu_text_red">#ffff0000</color>
+
+    <color name="text_like_counter">#2b5a83</color>
+
+    <color name="bg_comments">#ffffff</color>
+    <color name="btn_follow_color">#ffd7fff1</color>
+    <color name="btn_follow_color_pressed">#ffd5efff</color>
+    <color name="orange_tab">#f59231</color>
+    <color name="main_tabs_brown">#3b3422</color>
+    <color name="main_tabs_red">#8f0004</color>
+    <color name="gray_mas">#6A6A6A</color>
+    <color name="green_mas">#7ea32d</color>
+    <color name="tabs_color_presed">#54c219</color>
+    <color name="narenji">#ff9000</color>
+    <color name="tabs_color">#494a45</color>
+    <color name="light_gray_mas">#eaeaea</color>
+    <color name="about_us_bg_mas">#f4f4f4</color>
+    <color name="store_red">#EC4B2B</color>
+
+
+</resources>

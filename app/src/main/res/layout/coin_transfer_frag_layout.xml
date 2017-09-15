@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl_main"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffededed"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_1"
+                    android:background="@drawable/custom_bg"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="نوع انتقال"
+                        android:background="@drawable/custom_bg_two"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_type"
+                        android:layout_alignTop="@+id/sp_coin_type"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <Spinner
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_coin_type"
+                        android:gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_2"
+                    android:layout_below="@id/rl_1"
+                    android:background="@drawable/custom_bg"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="نام کاربری مقصد"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_alignParentRight="true"
+                        android:padding="20dp"
+                        android:background="@drawable/custom_bg_two"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"
+                        android:id="@+id/tv_username"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_username"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="20dp"
+                        android:singleLine="true"
+                        android:layout_toLeftOf="@+id/tv_username"
+                        android:layout_toStartOf="@+id/tv_username"
+                        android:layout_marginEnd="15dp"
+                        android:layout_alignTop="@+id/tv_username"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl_3"
+                    android:layout_below="@id/rl_2"
+                    android:background="@drawable/custom_bg"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:text="مقدار سکه"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_alignParentRight="true"
+                        android:padding="20dp"
+                        android:gravity="center"
+                        android:background="@drawable/custom_bg_two"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/tv_coin_count"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_coin_count"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:singleLine="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toLeftOf="@+id/tv_coin_count"
+                        android:layout_toStartOf="@+id/tv_coin_count"
+                        android:layout_alignTop="@+id/tv_coin_count"
+                        android:layout_alignBottom="@+id/tv_coin_count"
+                        android:inputType="numberDecimal"
+                        android:textSize="12sp"
+                        />
+
+                </RelativeLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_rules"
+                    android:textSize="14sp"
+                    android:layout_below="@+id/rl_3"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/textView3"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/show_rules"
+                    android:textColor="@color/primary_Blue"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:id="@+id/tv_rules"
+                    android:layout_marginRight="41dp"
+                    android:layout_marginEnd="41dp"
+                    android:layout_alignBottom="@+id/btn_transfer"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/btn_transfer" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:background="@drawable/bg_following"
+                    android:text="@string/transfer"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="27dp"
+                    android:id="@+id/btn_transfer"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

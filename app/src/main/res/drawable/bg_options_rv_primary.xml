@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="13dp" android:color="@color/orange_tab" />
+    <gradient android:startColor="@color/orange_tab"/>
+    <solid android:color="@android:color/transparent"  />
+
+    <corners android:radius="0dp" />
+</shape>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="afm.niafara.instagram">
+
+    <!--notification-->
+    <!--notification-->
+
+    <!--onSignal-->
+
+
+    <uses-permission android:name="afm.niafara.instagram.permission.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!--onSignal-->
+
+    <!--pushe-->
+
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+
+    <!--pushe-->
+
+    <!--notification-->
+    <!--notification-->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.access_network_state" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.farsitel.bazaar.permission.PAY_THROUGH_BAZAAR" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+
+
+    <uses-sdk
+        tools:overrideLibrary="co.ronash.pushe" />
+    <permission
+        android:name="afm.niafara.instagram.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission
+        android:name="afm.niafara.instagram.permission.C2D_MESSAGE" />
+    <!-- Optional permissions -->
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+        android:name="afm.niafara.instagram.CafeFollowerApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/New_AppTheme"
+        android:largeHeap="true"
+
+        tools:replace="android:supportsRtl , android:theme"
+        >
+
+
+
+        <activity
+            android:name="activities.CheckActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/New_AppTheme"
+            android:launchMode="singleTask"
+
+
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <activity
+            android:name="activities.FanActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+            />
+        <activity
+            android:name="activities.LikedActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+            />
+        <activity
+            android:name="activities.SearchOtherUsersActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+            />
+        <activity
+            android:name="activities.FirstActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+
+            android:theme="@style/New_AppTheme"
+
+        />
+        <activity
+            android:name="activities.GetLikeMediaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/New_AppTheme"
+            android:launchMode="singleTask"
+
+            />
+
+        <activity
+            android:name="activities.SearchAndPopularActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/New_AppTheme"
+            android:launchMode="singleTask"
+
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+
+        <activity
+            android:name="ui.view.TestActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+
+
+            />
+
+        <activity
+            android:name="activities.CoinTransfer"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme.Orange"
+            />
+        <activity
+            android:name="activities.AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+            />
+        <activity
+            android:name="activities.ReqInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/New_AppTheme"
+            android:launchMode="singleTask"
+
+
+            />
+        <activity
+            android:name="activities.AdsActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+            />
+
+        <activity
+            android:name="activities.WebviewLoginActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+
+            android:theme="@style/New_AppTheme"
+
+            />
+        <activity
+            android:name="niafara.Kharid"
+            android:label="خرید نسخه اصلی"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar.MinWidth" >
+        </activity>
+        <activity
+            android:name="niafara.KharidZarin"
+            android:label="خرید نسخه اصلی"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo" >
+        </activity>
+        <receiver
+            android:name="utility.AlarmReceiver"
+            android:process=":remote" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+
+
+        <!--pushe-->
+
+
+
+
+        <!--pushe-->
+
+
+        <receiver android:name="co.ronash.pushe.receiver.UpdateReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+
+                <data
+                    android:path="afm.niafara.instagram"
+                    android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="afm.niafara.instagram" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="co.ronash.pushe.token" android:value="PUSHE_305840853739"/>
+        <meta-data android:name="co.ronash.pushe.cr" android:value="aHR0cDovLzAzOGMwMzg1YTkyZTRjNGM4MzgxMzlhOWJlMTgxN2JmOmQ4MTM2NzU4ZjA0MjRkNjFiMDk3N2VkODQyYjZhMjI5QGNhLnB1c2hlLmlyLzYxMTA="/>
+
+
+    </application>
+
+</manifest>

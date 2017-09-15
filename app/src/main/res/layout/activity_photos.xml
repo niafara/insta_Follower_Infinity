@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--app:elevation="@dimen/default_elevation"-->
+        <!--app:layout_collapseMode="pin"-->
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
+
+            <!--perfect insta-->
+            <!--perfect insta-->
+            <!--perfect insta-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ivLogo"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="center"-->
+                <!--android:src="@drawable/img_toolbar_logo"-->
+                <!--/>-->
+
+    <!--</android.support.v7.widget.Toolbar>-->
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvPhotos"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/follow_like_bottom_ll"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:id="@+id/fl_pb"/>
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--<com.github.clans.fab.FloatingActionMenu-->
+    <!--android:id="@+id/menu1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--fab:menu_labels_style="@style/MenuLabelsStyle"-->
+    <!--fab:menu_animationDelayPerItem="0"-->
+    <!--fab:menu_shadowColor="#444"-->
+    <!--fab:menu_colorNormal="#FFB805"-->
+    <!--fab:menu_colorPressed="#F2AB00"-->
+    <!--fab:menu_colorRipple="#D99200"-->
+
+        <!-->-->
+
+    <!--<com.github.clans.fab.FloatingActionButton-->
+    <!--android:id="@+id/fab1"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/magicwand"-->
+    <!--fab:fab_label="Menu item 1"-->
+        <!--style="@style/MenuButtonsSmall" />-->
+
+    <!--<com.github.clans.fab.FloatingActionButton-->
+    <!--android:id="@+id/fab2"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/magnifyingglass"-->
+    <!--fab:fab_label="Menu item 2"-->
+        <!--style="@style/MenuButtonsSmall" />-->
+
+    <!--<com.github.clans.fab.FloatingActionButton-->
+    <!--android:id="@+id/fab3"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:src="@drawable/download"-->
+    <!--fab:fab_label="MJ_______"-->
+        <!--style="@style/MenuButtonsSmall" />-->
+    <!--</com.github.clans.fab.FloatingActionMenu>-->
+
+
+
+</RelativeLayout>
+
+<!--<com.github.clans.fab.FloatingActionButton-->
+<!--android:id="@+id/fab"-->
+<!--android:layout_width="wrap_content"-->
+<!--android:layout_height="wrap_content"-->
+<!--android:layout_gravity="bottom|right"-->
+<!--android:layout_marginBottom="8dp"-->
+<!--android:layout_marginRight="8dp"-->
+<!--android:src="@drawable/add_icon"-->
+<!--fab:fab_showAnimation="@anim/show_from_bottom"-->
+<!--fab:fab_hideAnimation="@anim/hide_to_bottom"/>-->

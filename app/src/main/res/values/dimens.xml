@@ -1,0 +1,28 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+
+    <dimen name="user_thumb_dia">60dp</dimen>
+    <dimen name="relative_time_icon_dia">17dp</dimen>
+    <dimen name="unit_spacing">8dp</dimen>
+
+
+    <dimen name="search_tv_padding">16dp</dimen>
+    <dimen name="progress_padding">2dp</dimen>
+    <dimen name="search_tv_corner">0dip</dimen>
+    <dimen name="progress_bar_corner">16dp</dimen>
+
+    <dimen name="default_elevation">8dp</dimen>
+    <dimen name="comment_avatar_size">48dp</dimen>
+    <dimen name="old_comment_avatar_size">56dp</dimen>
+    <dimen name="user_profile_avatar_size">56dp</dimen>
+    <dimen name="old_user_profile_avatar_size">88dp</dimen>
+    <dimen name="global_menu_avatar_size">64dp</dimen>
+    <dimen name="old_global_menu_avatar_size">56dp</dimen>
+    <dimen name="publish_photo_thumbnail_size">88dp</dimen>
+    <dimen name="old_publish_photo_thumbnail_size">96dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

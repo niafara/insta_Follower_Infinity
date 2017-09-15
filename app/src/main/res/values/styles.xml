@@ -1,0 +1,203 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/btn_bg</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    </style>
+
+    <style name="New_AppTheme_BLACK_FAKE" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/btn_bg</item>
+        <item name="colorAccent">#000000</item>
+        <item name="colorControlHighlight">@color/fab_color_pressed</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.TransparentActivity.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="New_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="colorPrimary">@color/style_color_primary</item>-->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/style_color_primary_dark</item>
+        <item name="colorAccent">@color/style_color_accent</item>
+        <item name="android:listDivider">@color/narenji</item>
+        <item name="colorControlHighlight">#d6d6d6</item>
+    </style>
+
+    <!--<style name="New_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="colorPrimary">@color/style_color_primary</item>-->
+        <!--<item name="colorPrimaryDark">@color/style_color_primary_dark</item>-->
+        <!--<item name="colorAccent">@color/style_color_accent</item>-->
+        <!--<item name="colorControlHighlight">@color/fab_color_pressed</item>-->
+    <!--</style>-->
+
+    <style name="New_AppTheme.Red" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#D32F2F</item>
+        <item name="colorPrimaryDark">#B71C1C</item>
+        <item name="colorAccent">#FF5252</item>
+        <item name="colorControlHighlight">#FF8A80</item>
+    </style>
+
+    <style name="New_AppTheme.Purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#9C27B0</item>
+        <item name="colorPrimaryDark">#6A1B9A</item>
+        <item name="colorAccent">#D500F9</item>
+        <item name="colorControlHighlight">#EA80FC</item>
+    </style>
+
+    <style name="New_AppTheme.DeepPurple" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#673AB7</item>
+        <item name="colorPrimaryDark">#4527A0</item>
+        <item name="colorAccent">#7C4DFF</item>
+        <item name="colorControlHighlight">#B388FF</item>
+    </style>
+
+    <style name="New_AppTheme.Green" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#2E7D32</item>
+        <item name="colorAccent">#69F0AE</item>
+        <item name="colorControlHighlight">#B9F6CA</item>
+    </style>
+
+    <!--<style name="New_AppTheme.XX" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--<item name="colorPrimary">#500</item>-->
+        <!--<item name="colorPrimaryDark">#800</item>-->
+        <!--<item name="colorAccent">#A200</item>-->
+        <!--<item name="colorControlHighlight">#A100</item>-->
+    <!--</style>-->
+
+
+    <style name="New_AppTheme.Blue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#2196F3</item>
+        <item name="colorPrimaryDark">#1565C0</item>
+        <item name="colorAccent">#90CAF9</item>
+        <item name="colorControlHighlight">#BBDEFB</item>
+    </style>
+
+    <style name="New_AppTheme.Blue_Grey" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#37474F</item>
+        <item name="colorAccent">#78909C</item>
+        <item name="colorControlHighlight">#B0BEC5</item>
+    </style>
+
+    <style name="New_AppTheme.Brown" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#795548</item>
+        <item name="colorPrimaryDark">#4E342E</item>
+        <item name="colorAccent">#8D6E63</item>
+        <item name="colorControlHighlight">#BCAAA4</item>
+    </style>
+
+    <style name="New_AppTheme.Orange" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimaryDark">#EF6C00</item>
+        <item name="colorAccent">#FFAB40</item>
+        <item name="colorControlHighlight">#FFD180</item>
+    </style>
+
+    <style name="New_AppTheme.Amber" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FFC107</item>
+        <item name="colorPrimaryDark">#FF8F00</item>
+        <item name="colorAccent">#FFD740</item>
+        <item name="colorControlHighlight">#FFE57F</item>
+    </style>
+
+ <style name="New_AppTheme.Yellow" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#FFEB3B</item>
+        <item name="colorPrimaryDark">#F9A825</item>
+        <item name="colorAccent">#FFFF00</item>
+        <item name="colorControlHighlight">#FFFF8D</item>
+    </style>
+
+    <style name="New_AppTheme.Lime" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#CDDC39</item>
+        <item name="colorPrimaryDark">#9E9D24</item>
+        <item name="colorAccent">#EEFF41</item>
+        <item name="colorControlHighlight">#F4FF81</item>
+    </style>
+
+
+    <style name="New_AppTheme.LightGreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#8BC34A</item>
+        <item name="colorPrimaryDark">#558B2F</item>
+        <item name="colorAccent">#B2FF59</item>
+        <item name="colorControlHighlight">#CCFF90</item>
+    </style>
+
+
+    <style name="New_AppTheme.Pink" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#E91E63</item>
+        <item name="colorPrimaryDark">#AD1457</item>
+        <item name="colorAccent">#FF4081</item>
+        <item name="colorControlHighlight">#FF80AB</item>
+    </style>
+
+    <style name="New_AppTheme.Indigo" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#283593</item>
+        <item name="colorAccent">#536DFE</item>
+        <item name="colorControlHighlight">#8C9EFF</item>
+    </style>
+
+    <style name="New_AppTheme.Teal" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#009688</item>
+        <item name="colorPrimaryDark">#00695C</item>
+        <item name="colorAccent">#64FFDA</item>
+        <item name="colorControlHighlight">#A7FFEB</item>
+    </style>
+
+    <style name="New_AppTheme.Cyan" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#00BCD4</item>
+        <item name="colorPrimaryDark">#00838F</item>
+        <item name="colorAccent">#18FFFF</item>
+        <item name="colorControlHighlight">#84FFFF</item>
+    </style>
+
+    <style name="ContextMenuButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:background">@drawable/btn_context_menu</item>-->
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="New_AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="New_AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="myAlertDialog" parent="Theme.AppCompat.Dialog.Alert">
+    <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MyEditTextTheme">
+        <!-- Used for the bottom line when not selected / focused -->
+        <item name="colorControlNormal">#9e9e9e</item>
+        <!-- colorControlActivated & colorControlHighlight use the colorAccent color by default -->
+    </style>
+
+
+    <style name="myExpandedTitleStyle" parent="TextAppearance.AppCompat.Small">
+        <item name="android:color">#ffffff</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="myExpandedTitleStyle.Title" parent="TextAppearance.AppCompat.Title">
+        <item name="android:color">#ffffff</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+</resources>
